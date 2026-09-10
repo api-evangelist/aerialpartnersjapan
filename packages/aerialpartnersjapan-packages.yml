@@ -1,0 +1,51 @@
+generated: '2026-09-10'
+method: searched
+source: >-
+  Unauthenticated registry searches against npm, PyPI, RubyGems, crates.io, Packagist, Maven Central,
+  NuGet and proxy.golang.org, plus the provider's own service and product pages and the
+  github.com/aerialpartners organization.
+package_count: 0
+official_package_count: 0
+note: >-
+  Aerial Partners ships no client library on any public registry. There is nothing to be current or
+  stale, so no version/published fields are recorded — the absence is the finding. The
+  github.com/aerialpartners organization exists (created 2018-01-13, 2 public repositories) but holds
+  only forks of aws-actions/amazon-ecs-deploy-task-definition and
+  aws-actions/amazon-ecs-render-task-definition, used in the company's own CI; they are not client
+  SDKs and the organization carries no first-party link back to aerial-p.com, so it is recorded here
+  as an observation rather than wired as a GitHubOrganization pointer. No SDKs pointer is emitted.
+packages: []
+registries_searched:
+- registry: npm
+  query: aerial partners / gtax / aerial-p
+  result: no first-party package
+- registry: pypi
+  query: aerial-partners
+  result: 404
+  note: >-
+    pypi.org/project/gtax exists but belongs to Roberto Vera Alvarez — a genomics taxonomy tool,
+    unrelated to this company. Not recorded.
+- registry: rubygems
+  query: gtax
+  result: 404
+- registry: crates.io
+  query: gtax
+  result: 404
+- registry: packagist
+  query: aerial-partners
+  result: 0 results
+- registry: maven-central
+  query: aerialpartners
+  result: 0 results
+- registry: nuget
+  query: aerialpartners
+  result: 0 results
+- registry: proxy.golang.org
+  query: github.com/aerialpartners/
+  result: 404
+observations:
+- github_org: https://github.com/aerialpartners
+  name: Aerial Partners
+  created: '2018-01-13'
+  public_repos: 2
+  contents: forks of two aws-actions GitHub Actions; no SDK, no first-party backlink to aerial-p.com

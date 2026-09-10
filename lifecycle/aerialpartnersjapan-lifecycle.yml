@@ -1,0 +1,147 @@
+generated: '2026-09-10'
+method: searched
+source: https://www.aerial-p.com/news
+docs:
+- https://www.aerial-p.com/news
+- https://www.aerial-p.com/others/lukka.html
+- https://www.aerial-p.com/press/20250715.html
+- https://www.aerial-p.com/press/20251111.html
+- https://support.crypto-city.net/hc/ja/articles/58865522639769
+- https://www.cryptact.com/news/gtax-integration
+note: >-
+  Aerial Partners publishes no API versioning policy, no deprecation policy, no Sunset/Deprecation
+  header contract (RFC 8594), no SLA and no status page — it has no public API to attach any of them
+  to. What it does publish, and publishes well, is SERVICE lifecycle: dated end-of-life notices with
+  migration schedules and data-retention terms. Those are recorded below. No StatusPage or
+  Deprecation pointer is emitted, because neither an operational status page nor an API deprecation
+  policy exists.
+api_versioning:
+  policy: none-published
+  scheme: null
+  evidence:
+  - url: https://www.aerial-p.com/service
+    status: 200
+deprecation_policy:
+  policy: none-published
+  sunset_header: false
+  deprecation_header: false
+status_page:
+  present: false
+  evidence:
+  - url: https://www.aerial-p.com/status
+    status: 404
+  - url: https://status.aerial-p.com/
+    status: 0
+    note: Host does not resolve (NXDOMAIN).
+sla:
+  published: false
+corporate_events:
+- date: '2025-01-27'
+  type: acquisition
+  headline: Lukka acquires Aerial Partners, entering the Japanese market.
+  detail: >-
+    Aerial Partners became part of the Lukka group. The company now also fronts Lukka Insights, the
+    parent's crypto data platform, alongside its own AWA and ADM products.
+  evidence:
+  - url: https://www.aerial-p.com/press/20250127.html
+    status: 200
+  - url: https://www.aerial-p.com/others/lukka.html
+    status: 200
+- date: '2026-07-01'
+  type: divestiture
+  headline: pafin acquires 株式会社Gtax; Gtax folds into Cryptact.
+  detail: >-
+    The Gtax profit-and-loss calculator and the Guardian tax-filing support business, both originated
+    by Aerial Partners, sit in 株式会社Gtax, which pafin (operator of Cryptact) acquired as a
+    subsidiary. Gtax is being merged into Cryptact. Aerial Partners itself remains a separate company
+    under Lukka, selling AWA and ADM; its 特定商取引法 disclosure, last revised 2025-11-05, names only
+    ADM and AWA.
+  evidence:
+  - url: https://www.cryptact.com/news/gtax-integration
+    status: 200
+  - url: https://www.pafin.com/news/cryptact-gtax-integration
+    status: 200
+service_end_of_life:
+- service: Gtax (一般版 / 個人事業主・法人版 / 税理士版)
+  operator_at_eol: 株式会社Gtax (pafin group)
+  originated_by: Aerial Partners
+  status: sunsetting
+  timeline:
+  - date: '2026-07-01'
+    event: New Gtax user registration stopped; tax-accountant edition stopped adding client accounts.
+  - date: '2026-09-27'
+    event: Last day of service. Gtax stops being provided.
+  - date: '2026-09-28'
+    event: Login disabled. Migration work runs 2026-09-28 to 2026-10-04.
+  - date: '2026-10-05'
+    event: Migrated accounts become usable on Cryptact (クリプタクト).
+  data_migration: >-
+    Transaction data imported by 2026-09-27 migrates automatically, along with stored exchange API
+    keys and wallet addresses; no re-registration is required. Blockchain transactions still sitting
+    unprocessed in 要処理 are NOT migrated and must be processed before 2026-09-27 or re-synced after.
+  evidence:
+  - url: https://support.crypto-city.net/hc/ja/articles/58865522639769
+    status: 200
+    note: >-
+      HTML is 403 to crawlers; the body was read anonymously from the Zendesk Help Center API at
+      https://support.crypto-city.net/api/v2/help_center/ja/articles/58865522639769.json (HTTP 200).
+- service: コイン相場 (Coin Souba) mobile app
+  operator_at_eol: Aerial Partners
+  status: discontinued
+  timeline:
+  - date: '2025-07-15'
+    event: Subscription renewals halted.
+  - date: '2025-08-31'
+    event: Service terminated and app removed from the stores; annual premium members refunded pro rata.
+  - date: '2025-10-31'
+    event: Support inquiries closed.
+  evidence:
+  - url: https://www.aerial-p.com/press/20250715.html
+    status: 200
+terms_changes:
+- date: '2025-11-11'
+  detail: Partial revision of the terms of use, privacy policy and 特定商取引法 disclosure.
+  evidence:
+  - url: https://www.aerial-p.com/press/20251111.html
+    status: 200
+succession:
+  service: Gtax
+  successor: Cryptact (クリプタクト), operated by 株式会社pafin
+  successor_url: https://www.cryptact.com/
+  plans_at_divestiture:
+    note: >-
+      The published Gtax annual subscription price sheet as carried into the Cryptact migration,
+      recorded here for provenance. These are NOT Aerial Partners' current prices — Gtax is divested
+      — and are reproduced verbatim from the provider's own migration notice.
+    currency: JPY
+    tax: included
+    source: https://support.crypto-city.net/hc/ja/articles/58865522639769
+    tiers:
+    - name: フリープラン (Free)
+      price: 0
+      calculated_results_per_year: 50
+      import_cap_per_year: 100000
+    - name: ミニマムプラン (Minimum)
+      price: 5500
+      calculated_results_per_year: 300
+    - name: ライトプラン (Light)
+      price: 16500
+      calculated_results_per_year: 1000
+    - name: ベーシックプラン (Basic)
+      price: 33000
+      calculated_results_per_year: 30000
+    - name: プレミアムプラン (Premium)
+      price: 55000
+      calculated_results_per_year: 500000
+    tax_accountant_edition:
+      before_2026_09_27: {individual: 22000, corporate: 55000}
+      from_2026_10_05: {individual: 55000, corporate: 55000}
+  data_retention_at_termination:
+  - condition: Paid plan cancelled
+    action: All data deleted 30 days after cancellation.
+  - condition: Free plan account withdrawn (退会)
+    action: All data deleted at the moment withdrawal completes.
+  evidence:
+  - url: https://support.crypto-city.net/hc/ja/articles/4408130007321
+    status: 200
+    note: Read via the anonymous Zendesk Help Center API (HTTP 200).

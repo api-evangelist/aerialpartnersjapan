@@ -1,0 +1,20 @@
+generated: '2026-09-10'
+method: searched
+source: https://www.aerial-p.com/service
+limit_count: 0
+note: >-
+  No rate limits are documented, because no public API reference exists to document them. Aerial
+  Partners has no developer portal, no API reference and no machine-readable contract on any host
+  it controls; the only API it names in public is the "Gtax Network API", a joint-development
+  offering whose specification is only reachable through a sales conversation. There are therefore
+  no published windows, quotas, burst allowances, 429 semantics or RateLimit-* response headers to
+  record. This is an honest zero, not an unchecked field.
+limits: []
+response_headers: []
+evidence:
+- url: https://www.aerial-p.com/service
+  status: 200
+- url: https://www.aerial-p.com/others/gtax_network.html
+  status: 200
+- url: https://www.aerial-p.com/openapi.json
+  status: 404

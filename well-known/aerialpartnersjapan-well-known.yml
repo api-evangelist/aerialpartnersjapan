@@ -1,0 +1,103 @@
+generated: '2026-09-10'
+method: probed
+source: >-
+  Anonymous HTTPS probes of every host this record knows — the registrable domain and www
+  (aerial-p.com), the product host that carries AWA and the divested Gtax app (crypto-city.net),
+  and the Zendesk-hosted help centre (support.crypto-city.net). No host names an authorization
+  server, so no third host was added.
+note: >-
+  Nothing was found. Aerial Partners serves no /.well-known document on any host. crypto-city.net
+  is a Nuxt single-page app with a catch-all route: it answers HTTP 200 with the same 5,136-byte
+  Gtax HTML shell for /.well-known/openid-configuration, /oauth-authorization-server,
+  /oauth-protected-resource and /api-catalog. Those 200s are NOT documents and are recorded as
+  html_shell true. No WellKnown, SecurityTxt or AgentCard pointer is emitted, because none of these
+  paths returned a real document.
+hosts:
+- host: www.aerial-p.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+- host: aerial-p.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+- host: crypto-city.net
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 200
+    html_shell: true
+    note: SPA catch-all returned the Gtax HTML shell, not a discovery document.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    html_shell: true
+    note: SPA catch-all returned the Gtax HTML shell, not a discovery document.
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    html_shell: true
+    note: SPA catch-all returned the Gtax HTML shell, not a discovery document.
+  - path: /.well-known/api-catalog
+    status: 200
+    html_shell: true
+    note: SPA catch-all returned the Gtax HTML shell, not a discovery document.
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+- host: support.crypto-city.net
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404

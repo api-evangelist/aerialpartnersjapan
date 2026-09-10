@@ -1,0 +1,35 @@
+generated: '2026-09-10'
+method: searched
+source: https://www.aerial-p.com/service
+docs:
+- https://www.aerial-p.com/service
+- https://www.aerial-p.com/others/awa.html
+- https://www.aerial-p.com/others/gtax_network.html
+- https://www.aerial-p.com/contact
+plan_count: 0
+currency: JPY
+note: >-
+  Aerial Partners publishes no prices for any product it currently sells. The service page describes
+  AWA (Aerial Web3 Accounting) and ADM (Aerial Data Management) and routes both to the corporate
+  inquiry form; ADM is explicitly a custom build for crypto-asset exchange operators and Type I
+  financial instruments business operators. The "Gtax Network" BtoBtoC offering — the only surface
+  the company describes as an API — carries no price either: its own page ends with
+  「当社コーポレートサイトの問い合わせフォームよりお問い合わせください」. This is a contact-sales
+  motion end to end, so plan_count is an honest zero rather than an omission.
+  Aerial Partners DID publish a public price sheet for Gtax, but Gtax was carved out into
+  株式会社Gtax and acquired by pafin in July 2026; that price sheet is recorded in
+  lifecycle/aerialpartnersjapan-lifecycle.yml under the divestiture, not here, because it is no
+  longer Aerial Partners' commercial surface.
+plans: []
+sales_gate:
+  present: true
+  form: https://www.aerial-p.com/contact
+  evidence:
+  - url: https://www.aerial-p.com/service
+    status: 200
+    note: AWA and ADM both terminate in the inquiry form; no price is stated.
+  - url: https://www.aerial-p.com/others/gtax_network.html
+    status: 200
+    note: >-
+      Gtax Network page. Describes 「フェーズ１：「GtaxネットワークAPI」による簡易計算機能の提供」
+      and directs all inquiries to the corporate contact form.

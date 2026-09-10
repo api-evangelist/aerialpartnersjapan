@@ -1,4 +1,4 @@
-# Aerialpartnersjapan
+# Aerial Partners
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,25 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aerialpartnersjapan is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/aerialpartnersjapan
+株式会社Aerial Partners (Roppongi, Minato-ku, Tokyo) builds digital-asset accounting, tax and
+data-management software for the Japanese market. Its current products are **AWA (Aerial Web3
+Accounting)**, an accounting-support tool for Web3 businesses handling crypto assets and NFTs, and
+**ADM (Aerial Data Management)**, a management-accounting and statutory-ledger data platform for
+crypto-asset exchange operators and Type I financial instruments business operators. The company
+also fronts **Lukka Insights** for its parent, Lukka, which acquired Aerial Partners in January 2025.
+
+Aerial Partners originated **Gtax**, the consumer and tax-accountant crypto profit-and-loss
+calculator, and **Guardian**, its tax-filing support service. Both now sit in 株式会社Gtax, which
+pafin acquired in July 2026 and is folding into Cryptact on 5 October 2026.
+
+**No public API.** As probed on 2026-09-10, Aerial Partners publishes no developer portal, no API
+reference and no machine-readable contract (no OpenAPI, AsyncAPI, GraphQL SDL, Protobuf, WSDL or
+Postman collection) on any host it controls, and serves no `/.well-known` document. The only API it
+markets is the "Gtax Network API", a joint-development BtoBtoC offering for exchange operators
+reachable only through the corporate inquiry form. What this repository records is therefore the
+company's public surface, its commercial gate, its service lifecycle and the probes that found
+nothing.
+
+- https://www.aerial-p.com/
+- https://www.aerial-p.com/service
+- https://www.aerial-p.com/others/gtax_network.html
