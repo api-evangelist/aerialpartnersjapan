@@ -2,11 +2,18 @@
   "repo": "aerialpartnersjapan",
   "feeds": [
     {
-      "source": "https://www.aerial-p.com/",
-      "feed_url": "https://www.aerial-p.com/blog/feed/",
+      "source": "https://www.aerial-p.com/feed",
+      "feed_url": "https://www.aerial-p.com/feed",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "feed"
+    },
+    {
+      "source": "https://www.aerial-p.com/media",
+      "feed_url": "https://www.aerial-p.com/media",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     },
     {
       "source": "https://www.aerial-p.com/blog/feed/",
@@ -17,5 +24,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
