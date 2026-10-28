@@ -64,25 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-株式会社Aerial Partners (Roppongi, Minato-ku, Tokyo) builds digital-asset accounting, tax and
-data-management software for the Japanese market. Its current products are **AWA (Aerial Web3
-Accounting)**, an accounting-support tool for Web3 businesses handling crypto assets and NFTs, and
-**ADM (Aerial Data Management)**, a management-accounting and statutory-ledger data platform for
-crypto-asset exchange operators and Type I financial instruments business operators. The company
-also fronts **Lukka Insights** for its parent, Lukka, which acquired Aerial Partners in January 2025.
+Aerial Partners (株式会社Aerial Partners, Roppongi, Minato-ku, Tokyo) builds digital-asset accounting, tax and data-management software for the Japanese market. Its current product line is AWA (Aerial Web3 Accounting), an accounting-support tool for Web3 businesses handling crypto assets and NFTs, and ADM (Aerial Data Management), a management-accounting and statutory-ledger data platform for crypto-asset exchange operators and Type I financial instruments business operators. The company also resells Lukka Insights, the crypto data platform of its parent, Lukka, which acquired Aerial Partners in January 2025. Aerial Partners originated Gtax, the consumer and tax-accountant crypto profit-and-loss calculator, and Guardian, its tax-filing support service; both moved to 株式会社Gtax, which pafin acquired in July 2026 and is folding into Cryptact on 5 October 2026. Aerial Partners publishes no public developer portal, API reference or machine-readable contract: the only API it markets is the "Gtax Network API", a joint-development BtoBtoC offering for exchange operators reachable only through the corporate inquiry form.
 
-Aerial Partners originated **Gtax**, the consumer and tax-accountant crypto profit-and-loss
-calculator, and **Guardian**, its tax-filing support service. Both now sit in 株式会社Gtax, which
-pafin acquired in July 2026 and is folding into Cryptact on 5 October 2026.
+**Areas:** Company · Cryptocurrency · Digital Assets · Accounting · Tax · Web3 · Financial Services · Japan · Data Management · Blockchain
 
-**No public API.** As probed on 2026-09-10, Aerial Partners publishes no developer portal, no API
-reference and no machine-readable contract (no OpenAPI, AsyncAPI, GraphQL SDL, Protobuf, WSDL or
-Postman collection) on any host it controls, and serves no `/.well-known` document. The only API it
-markets is the "Gtax Network API", a joint-development BtoBtoC offering for exchange operators
-reachable only through the corporate inquiry form. What this repository records is therefore the
-company's public surface, its commercial gate, its service lifecycle and the probes that found
-nothing.
+## Aerial Partners on APIs.io
 
-- https://www.aerial-p.com/
-- https://www.aerial-p.com/service
-- https://www.aerial-p.com/others/gtax_network.html
+Everything profiled for Aerial Partners is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aerialpartnersjapan/](https://apis.io/providers/aerialpartnersjapan/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aerialpartnersjapan Domain Security](https://apis.io/security/aerialpartnersjapan/aerialpartnersjapan-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aerialpartnersjapan Plans Pricing](https://apis.io/plans/aerialpartnersjapan/aerialpartnersjapan-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Aerialpartnersjapan Rate Limits](https://apis.io/rate-limits/aerialpartnersjapan/aerialpartnersjapan-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.aerial-p.com/)
+- [Support](https://www.aerial-p.com/contact)
+- [Blog](https://www.aerial-p.com/media)
+- [Terms of service](https://www.aerial-p.com/document/regulation.html)
+- [Privacy policy](https://www.aerial-p.com/document/privacypolicy.html)
+
+## API Evangelist rating
+
+**Kin Score 11.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aerialpartnersjapan/](https://apis.io/providers/aerialpartnersjapan/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aerial Partners: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aerialpartnersjapan/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
